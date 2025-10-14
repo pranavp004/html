@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Registration Form</title>    
+</head>
+<body>
+  <form>
+    <!-- Name -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" maxlength="25" required>
+    <br><br>
+
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"required autofocus>
+    <br><br>
+
+    <!-- Password -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" minlength="6" required>
+    <br><br>
+
+    <!-- Category -->
+    <label for="category">Category:</label>
+    <select id="category" name="category" required>
+      <option value="student">Student</option>
+      <option value="employee">Employee</option>
+      <option value="freelancer" selected>Freelancer</option>
+    </select>
+    <br><br>
+
+    <!-- Event Date -->
+    <label for="eventDate">Event Date:</label>
+    <input type="date" id="eventDate" name="eventDate" required>
+    <br><br>
+
+    <!-- Tickets -->
+    <label>Tickets:</label><br>
+    <input type="radio" id="ticket1" name="tickets" value="1" required>
+    <label for="ticket1">1 ticket</label><br>
+    <input type="radio" id="ticket2" name="tickets" value="2" checked>
+    <label for="ticket2">2 tickets</label><br>
+    <input type="radio" id="ticket3" name="tickets" value="3">
+    <label for="ticket3">3 tickets</label>
+    <br><br>
+
+    <!-- Payment -->
+    <input type="checkbox" id="payment" name="payment" required>
+    <label for="payment">Online payment</label>
+    <br><br>
+
+    <!-- Notes -->
+    <label for="notes">Notes:</label><br>
+    <textarea id="notes" name="notes" placeholder="Add any additional information..."></textarea>
+    <br><br>
+
+    <!-- Submit -->
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
