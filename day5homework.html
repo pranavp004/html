@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Blog Post</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    padding: 40px;
+  }
+
+  .blog-post {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    margin: auto;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .title {
+    text-align: center;
+    color: #333;
+  }
+
+  .author {
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+  /* Style the first line and first letter */
+  .content::first-letter {
+    color: #e63946;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .content::first-line {
+    font-weight: bold;
+  }
+
+  /* Quote with ::before pseudo-element */
+  .quote {
+    margin: 20px;
+    padding: 10px 20px;
+    background: #f1f1f1;
+    border-left: 5px solid #e63946;
+    font-style: italic;
+    position: relative;
+  }
+
+  .quote::before {
+    content: "“";
+    font-size: 2em;
+    color: #e63946;
+    position: absolute;
+    left: 10px;
+    top: -5px;
+  }
+
+  /* Link pseudo-classes */
+  a:link {
+    color: blue;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: purple;
+  }
+
+  a:hover {
+    color: red;
+    text-decoration: underline;
+  }
+
+  /* h4 side-by-side */
+  .headings {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+
+  .headings h4 {
+    margin: 0;
+    padding: 10px;
+  }
+
+  /* Style only the second h4 using adjacent sibling selector */
+  .headings h4 + h4 {
+    color: black;
+    border-bottom: 2px solid black;
+  }
+</style>
+</head>
+
+<body>
+
+  <div class="blog-post">
+    <h1 class="title">A Journey into Web Design</h1>
+    <p class="author">By <a href="#">Pranav</a></p>
+
+    <p class="content">
+      Web design is not just about creating pretty layouts. It’s about understanding the user, the purpose, and the function. 
+      Every element has meaning, and together they create the experience.
+    </p>
+
+    <blockquote class="quote">
+      Good design is as little design as possible.
+    </blockquote>
+
+    <div class="headings">
+      <h4>First Section</h4>
+      <h4>Second Section</h4>
+    </div>
+  </div>
+
+</body>
+</html>
