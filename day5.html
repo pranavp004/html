@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styled web paget</title>
+    <style>
+        section {
+            width: 70%;
+            margin: 20px auto;
+            padding: 15px;
+            background-color:yellowgreen;
+            border-radius: 8px;
+        }
+        section h2{
+            text-align: center;
+            color: crimson;
+        }
+        section p::first-line{
+            font-weight: bold;
+        }
+        section p::first-letter{
+            color: blue;
+            font-size: medium;
+        }
+        section p span{
+            color: blueviolet;
+        }div ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    div ul li:first-child a {
+      color: red;
+    }
+
+    a:link {
+      color: blue;
+    }
+    a:visited {
+      color: purple;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h2>About Our Web Page</h2>
+    <p>
+      Welcome to our example page. This paragraph shows how to style text using CSS pseudo-elements.
+      <span>We can emphasize certain words too.</span>
+    </p>
+    <p>
+      CSS allows us to control the look and feel of our HTML elements easily.
+      <span>Practice helps you learn faster.</span>
+    </p>
+  </section>
+
+  <div class="container">
+    <h3>First Subheading</h3>
+    <h3>Second Subheading</h3>
+  </div>
+
+  <div>
+    <ul>
+      <li><a href="#"></a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</body>
+</html>
