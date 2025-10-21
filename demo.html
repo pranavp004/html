@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>School Announcement</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+  }
+
+  /* Centered Heading */
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+  }
+
+  /* Notice Box */
+  .notice-box {
+    position: relative;
+    background-color: #ffffff;
+    border: 2px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: auto; /* Scroll if content overflows */
+  }
+
+  .notice-box img {
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin-right: 15px;
+    border-radius: 8px;
+  }
+  .notice-text {
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: crimson;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 12px;
+  }
+
+  .clear {
+    clear: both;
+  }
+</style>
+</head>
+<body>
+
+  <h1>Important Notice</h1>
+
+  <div class="notice-box">
+    <span class="badge">!</span>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-wrBGU3jQVcqCoNzMy8d6zEpj2h3fwI1TJg&salt="School Image">
+    <div class="notice-text">
+      <p>
+        Dear students and parents, this is to inform you that the school will remain 
+        closed on <b>Monday, October 21st</b> due to maintenance work. 
+        Regular classes will resume from Tuesday. Please check the school website 
+        for any further updates. Thank you for your understanding and cooperation.
+      </p>
+      <p>
+        Stay tuned for more announcements about upcoming events and examinations.
+      </p>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+</body>
+</html>
