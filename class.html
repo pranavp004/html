@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Card</title>
+  <style>
+    .product-card {
+      width: 250px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding: 115px;
+      text-align: left;
+      font-family: Arial, sans-serif;
+      margin: 20px auto;
+      transition: background-color 0.3s ease;
+    }
+
+    .product-image {
+      width: 100%;
+      border: 2px solid black;
+      border-top-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      display: block;
+    }
+
+    .product-name {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .buy-btn {
+      background-color: #28a745;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .buy-btn:hover {
+      background-color: #218838;
+    }
+
+    @media (max-width: 600px) {
+      .product-card {
+        text-align: center;
+        font-size: 0.9em;
+        width: 90%;
+      }
+    }
+
+    @media (orientation: landscape) {
+      .product-card {
+        background-color: lightblue;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/61n0aVXta7L._AC_UY1000_.jpg" 
+         alt="Product Image" 
+         class="product-image">
+    <h3 class="product-name">Smart Watch</h3>
+    <button class="buy-btn">Buy Now</button>
+  </div>
+
+</body>
+</html>
