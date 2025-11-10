@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Featured Blog Section</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+  }
+
+  .featured-blog {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #fff8e1;
+    padding: 20px;
+  }
+
+  .blog-post {
+    width: 30%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    margin: 10px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .blog-post img[src$=".jpg"] {
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .blog-post h2 {
+    font-size: 1.4rem;
+    margin: 10px;
+  }
+
+  .blog-post a[href^="https"] {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .blog-post a:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive design for small screens */
+  @media (max-width: 600px) {
+    .featured-blog {
+      flex-direction: column;
+      align-items: center;
+    }
+    .blog-post {
+      width: 80%;
+      font-size: 0.9rem;
+    }
+  }
+
+  /* Portrait orientation */
+  @media (orientation: portrait) {
+    .featured-blog {
+      background-color: lightyellow;
+    }
+  }
+</style>
+</head>
+<body>
+
+<section class="featured-blog">
+  <div class="blog-post">
+    <img src="blog1.jpg" alt="Blog 1">
+    <h2>Exploring Nature's Beauty</h2>
+    <p>Discover the serene landscapes and hidden wonders of the natural world.</p>
+    <a href="https://example.com/blog1">Read More</a>
+  </div>
+
+  <div class="blog-post">
+    <img src="blog2.png" alt="Blog 2">
+    <h2>Technology and the Future</h2>
+    <p>Learn how innovation is shaping the next generation of smart devices.</p>
+    <a href="http://example.com/blog2">Read More</a>
+  </div>
+
+  <div class="blog-post">
+    <img src="blog3.jpg" alt="Blog 3">
+    <h2>Healthy Living Tips</h2>
+    <p>Simple habits to boost your physical and mental well-being.</p>
+    <a href="https://example.com/blog3">Read More</a>
+  </div>
+</section>
+
+</body>
+</html>
